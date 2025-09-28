@@ -29,7 +29,7 @@ const DEFAULT_BENCHMARKS = {
   "B2B Lead Gen": { cpl: { good: 80, ok: 120 }, ctr: { good: 0.02, ok: 0.01 }, lpCv: { good: 0.05, ok: 0.025 }, roas: { good: 3.0, ok: 2.0 }, cacToLtv: { good: 0.3, ok: 0.4 } },
   "Healthcare": { cpl: { good: 90, ok: 140 }, ctr: { good: 0.02, ok: 0.012 }, lpCv: { good: 0.06, ok: 0.03 }, roas: { good: 3.0, ok: 2.0 }, cacToLtv: { good: 0.25, ok: 0.35 } },
   "Real Estate": { cpl: { good: 50, ok: 100 }, ctr: { good: 0.02, ok: 0.012 }, lpCv: { good: 0.08, ok: 0.04 }, roas: { good: 3.0, ok: 2.0 }, cacToLtv: { good: 0.25, ok: 0.33 } },
-} as const;
+};
 
 function useBenchmarks() {
   const [bm, setBm] = useState<Record<string, any>>(() => JSON.parse(JSON.stringify(DEFAULT_BENCHMARKS)));
